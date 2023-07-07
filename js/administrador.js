@@ -68,18 +68,6 @@ for (var i = 0; i < datosGuardados.length; i++) {
     celdaApellido.textContent = datos.apellido;
     fila.appendChild(celdaApellido);
 
-    var celdaTelefono = document.createElement('td');
-    celdaTelefono.textContent = datos.telefono;
-    fila.appendChild(celdaTelefono);
-
-    var celdaEmail = document.createElement('td');
-    celdaEmail.textContent = datos.email;
-    fila.appendChild(celdaEmail);
-
-    var celdaDireccion = document.createElement('td');
-    celdaDireccion.textContent = datos.direccion;
-    fila.appendChild(celdaDireccion);
-
     var celdaPermitirAcceso = document.createElement('td');
     var interruptor = document.createElement('input');
     interruptor.type = 'checkbox';

@@ -4,6 +4,20 @@
 * {
   margin: 0;
   padding: 0;
+  overflow-x: hidden;
+}
+
+body {
+  background-image: url(../img/Diseño\ sin\ título.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 100vh; /* Opcional: ajusta la altura según tus necesidades */
+  
+}
+
+html {
+  background-color: rgb(89, 246, 194);
 }
 
 h1, p, a, th, td, label {
@@ -39,6 +53,8 @@ h1 {
     border-radius: 4px;
     display: block;
     margin: 0 auto;
+    
+    
   }
   
   /* Estilo para las etiquetas de los campos */
@@ -141,11 +157,9 @@ video {
 }
 
 .bienvenida {
-  background-image: url(../img/Diseño\ sin\ título.png);
-  background-size: 100% 100%;
   background-repeat: no-repeat;
   background-position: center;
-  margin: -30px;
+  margin-top: -30px;
   padding-top: 30px;
 }
 
@@ -159,14 +173,39 @@ video {
   color: white;
 }
 
-body {
-  background-image: url(../img/Diseño\ sin\ título.png);
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-  height: 100vh; /* Opcional: ajusta la altura según tus necesidades */
+
+@media screen and (max-width: 987px) {
+
+  thead th {
+    font-size: 0.8rem;
+    padding: 5px;
+  }
+
+  tbody td {
+    font-size: .8rem;
+    padding: 10px 5px;
+  }
 }
 
-html {
-  background-color: rgb(89, 246, 194);
+@media screen and (max-width: 540px) {
+
+  thead th {
+    font-size: 0.6rem;
+    padding: 5px;
+  }
+
+  tbody td {
+    font-size: .6rem;
+    padding: 10px 5px;
+  }
+
+  form {
+    max-width: 100%; /* Ocupa todo el ancho disponible en pantallas pequeñas */
+    padding: 10px;
+    margin: 30px auto;
+  }
+
+  video {
+    width: 100%;
+  }
 }
