@@ -9,7 +9,7 @@
 </head>
 <body>
   <!-- ------------------------ navbar ------------------------ -->
-  <nav class="navbar navbar-expand-lg bg-body-tertiary navbar bg-dark border-bottom border-bottom-dark" data-bs-theme="dark">
+  <nav class="navbar navbar-expand-lg bg-body-tertiary bg-dark border-bottom border-bottom-dark" data-bs-theme="dark">
     <div class="container-fluid">
       <a class="navbar-brand" href="index.html">CLUB Fornite</a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -52,15 +52,15 @@
   <!-- --------------------------- formulario Editar -------------------------- -->
   <form id="formularioEdicion" style="display: none;" class="form-container">
     <label for="nombre">Nombre y Apellido:</label>
-    <input type="text" id="nombre" required><br>
+    <input type="text" id="nombre" placeholder="Pedro Gomez" required><br>
     <label for="apellido">Usuario:</label>
-    <input type="text" id="apellido" required><br>
+    <input type="text" id="apellido" placeholder="@username" required><br>
     <label for="telefono">Teléfono:</label>
-    <input type="tel" id="telefono" required><br>
+    <input type="tel" id="telefono" placeholder="+54 11 2233 4455" required><br>
     <label for="email">Email:</label>
-    <input type="email" id="email" required><br>
+    <input type="email" id="email" placeholder="nombre@mail.com" required><br>
     <label for="direccion">Dirección:</label>
-    <input type="text" id="direccion" required><br>
+    <input type="text" id="direccion" placeholder="Av. Siempre viva 2434" required><br>
     <label for="categoria">Categoría:</label>
     <select id="categoria" required>
       <option value="Cadete">Cadete</option>
@@ -68,10 +68,11 @@
       <option value="Adherente">Adherente</option>
     </select><br>
     <label for="mensualidad">Mensualidad:</label>
-    <input type="number" id="mensualidad" min="0" step="0.01"><br>
+    <input type="number" id="mensualidad" min="0" step="0.01"  placeholder="3000$"><br>
     <input type="button" value="Editar" onclick="editarDatos()">
   </form>
 
 <script src="js/administrador.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
 </body>
 </html>
