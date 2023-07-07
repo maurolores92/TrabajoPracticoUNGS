@@ -1,0 +1,172 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;0,900;1,500&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+h1, p, a, th, td, label {
+  font-family: 'Roboto', sans-serif;
+}
+
+h1 {
+    text-align: center;
+    margin: 30px auto;
+}
+
+/* Estilo para el contenedor del formulario */
+.form-container {
+    width: 600px;
+    margin: 30px auto;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    padding: 20px;
+    background-color: #f9f9f9;
+  }
+  
+  /* Estilo para los campos de entrada */
+  .form-container input[type="text"],
+  .form-container input[type="email"],
+  .form-container input[type="tel"],
+  .form-container input[type="number"],
+  .form-container select,
+  .form-container textarea {
+    width: 80%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    display: block;
+    margin: 0 auto;
+  }
+  
+  /* Estilo para las etiquetas de los campos */
+  .form-container label {
+    display: block;
+    margin-bottom: 5px;
+    margin-left: 10%;
+  }
+  
+  /* Estilo para el botón de envío */
+  .form-container input[type="button"],
+  button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    display: block;
+    margin: 0 auto;
+  }
+  
+  /* Estilo para el botón de envío cuando se pasa el mouse por encima */
+  .form-container input[type="button"],
+  button:hover {
+    background-color: #45a049;
+  }
+
+  
+  /* Estilo para la tabla */
+  .table-container table {
+    width: 100%;
+    border-collapse: collapse;
+    
+  }
+
+  table {
+    margin: 0 auto;
+  }
+  
+  /* Resto de estilos para las celdas y encabezado de la tabla */
+  thead {
+    background-color: #f5f5f5;
+  }
+  
+  thead th {
+    font-size: 1.2rem;
+    padding: 20px;
+    text-align: center    ;
+    border-bottom: 1px solid #ccc;
+  }
+  
+  tbody tr:nth-child(even) {
+    background-color: #f9f9f9;
+  }
+  
+  tbody td {
+    padding: 10px 30px;
+    background-color: #f9f9f9;
+    border-bottom: 1px solid #ccc;
+    text-align: left;
+  }
+  
+  tbody td:last-child {
+    text-align: center;
+  }
+  
+  tbody td:last-child a {
+    color: #337ab7;
+    text-decoration: none;
+  }
+  
+  tbody td:last-child a:hover {
+    text-decoration: underline;
+  }
+
+input[type="checkbox"] {
+    text-align: center;
+    margin: 0 auto;
+    align-items: center;
+    display: flex;
+    
+}
+
+.btnDescargar {
+  display: flex;
+  align-items: center;
+  margin: 40px auto;
+}
+
+video {
+  width: 50%;
+}
+
+.video {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 30px;
+}
+
+.bienvenida {
+  background-image: url(../img/Diseño\ sin\ título.png);
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin: -30px;
+  padding-top: 30px;
+}
+
+.mensajeBienvenida {
+  max-width: 900px;
+  text-align: center;
+  margin: 0 auto;
+  font-weight: bold;
+  font-size: 1.2rem;
+  text-shadow: 5px 7px 18px rgba(0,0,0,0.7);
+  color: white;
+}
+
+body {
+  background-image: url(../img/Diseño\ sin\ título.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 100vh; /* Opcional: ajusta la altura según tus necesidades */
+}
+
+html {
+  background-color: rgb(89, 246, 194);
+}
