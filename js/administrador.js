@@ -10,7 +10,6 @@ function mostrarFormularioEdicion(indice) {
   formulario.elements['apellido'].value = datos.apellido;
   formulario.elements['telefono'].value = datos.telefono;
   formulario.elements['email'].value = datos.email;
-  formulario.elements['direccion'].value = datos.direccion;
   formulario.elements['categoria'].value = datos.categoria;
   formulario.elements['mensualidad'].value = datos.mensualidad || '';
   formulario.dataset.indice = indice; // Guardar el índice del afiliado en el formulario
@@ -29,7 +28,6 @@ function editarDatos() {
   var apellido = formulario.elements['apellido'].value;
   var telefono = formulario.elements['telefono'].value;
   var email = formulario.elements['email'].value;
-  var direccion = formulario.elements['direccion'].value;
   var categoria = formulario.elements['categoria'].value;
   var mensualidad = formulario.elements['mensualidad'].value;
 
@@ -38,7 +36,6 @@ function editarDatos() {
   datosGuardados[indice].apellido = apellido;
   datosGuardados[indice].telefono = telefono;
   datosGuardados[indice].email = email;
-  datosGuardados[indice].direccion = direccion;
   datosGuardados[indice].categoria = categoria;
   datosGuardados[indice].mensualidad = mensualidad;
 
@@ -128,7 +125,6 @@ function descargarDatosPDF() {
     contenido += 'Nombre: ' + datos.nombre + '\n';
     contenido += 'Apellido: ' + datos.apellido + '\n';
     contenido += 'Teléfono: ' + datos.telefono + '\n';
-    contenido += 'Dirección: ' + datos.direccion + '\n';
     contenido += 'Permiso de acceso: ' + datos.permisoAcceso + '\n';
     contenido += 'Categoría: ' + datos.categoria + '\n';
     contenido += 'Mensualidad: ' + (datos.mensualidad || '') + '\n';
