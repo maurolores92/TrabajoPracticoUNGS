@@ -3,14 +3,12 @@ function guardarDatos() {
     var apellido = document.getElementById('apellido').value;
     var telefono = document.getElementById('telefono').value;
     var email = document.getElementById('email').value;
-    var direccion = document.getElementById('direccion').value;
     
     var datos = {
       nombre: nombre,
       apellido: apellido,
       telefono: telefono,
       email: email,
-      direccion: direccion
     };
     
 
@@ -25,7 +23,6 @@ function guardarDatos() {
     document.getElementById('apellido').value = '';
     document.getElementById('telefono').value = '';
     document.getElementById('email').value = '';
-    document.getElementById('direccion').value = '';
 }
 
 // Obtener los datos almacenados en el localStorage
@@ -48,9 +45,9 @@ for (var i = 0; i < datosGuardados.length; i++) {
   celdaTelefono.textContent = datos.telefono;
   fila.appendChild(celdaTelefono);
 
-  var celdaDireccion = document.createElement('td');
-  celdaDireccion.textContent = datos.direccion;
-  fila.appendChild(celdaDireccion);
+  var celdaEmail = document.createElement('td');
+  celdaEmail.textContent = datos.email;
+  fila.appendChild(celdaEmail);
 
   var celdaAcceso = document.createElement('td');
   celdaAcceso.textContent = datos.permisoAcceso ? 'Acceso permitido' : 'Acceso denegado';
